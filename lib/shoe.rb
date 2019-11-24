@@ -14,6 +14,6 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
   
-  BRANDS.uniq { |brand| [person.age, person.country] }
+  BRANDS.uniq { |brand| }
 
 end
