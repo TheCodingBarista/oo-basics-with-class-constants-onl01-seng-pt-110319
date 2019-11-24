@@ -10,7 +10,7 @@ class Shoe
       Shoe.new(new_brand)
       end
     
-    BRANDS << brand
+    BRANDS << new_brand
   end
 
   def cobble
