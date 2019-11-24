@@ -8,7 +8,7 @@ class Shoe
     @brand = brand
     BRANDS << brand
       BRANDS.each do |new_brand|
-        new_brand.delete_if { |new_brand| == brand }
+        new_brand.delete_if { |duplicate| == new_brand }
       end
   end
 
