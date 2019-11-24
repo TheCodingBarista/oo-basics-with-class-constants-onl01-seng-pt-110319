@@ -3,18 +3,11 @@ class Shoe
   attr_reader :brand
   
   BRANDS = []
-
-  # def initialize(brand)
-    # @brand = brand
-    # if !(BRANDS.include?(@brand))
-      # BRANDS << @brand
-    # end
-  # end
   
   def initialize(brand)
     @brand = brand
     BRANDS << @brand
-  BRANDS.uniq!
+      BRANDS.uniq!
   end
   
   def cobble
@@ -23,4 +16,3 @@ class Shoe
   end
 
 end
-
