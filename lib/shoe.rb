@@ -9,6 +9,7 @@ class Shoe
     BRANDS << brand
       brands.each do |brand|
         Shoe.new(brand)
+      end
   end
 
   def cobble
