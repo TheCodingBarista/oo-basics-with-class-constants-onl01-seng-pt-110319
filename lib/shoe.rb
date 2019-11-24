@@ -16,4 +16,4 @@ class Shoe
 
 end
 
-BRANDS.uniq
+BRANDS.uniq!
