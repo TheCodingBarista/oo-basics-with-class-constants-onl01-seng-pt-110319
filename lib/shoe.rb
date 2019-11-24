@@ -6,10 +6,9 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
-      BRANDS.each do |new_brand|
-        
-      end
+    if !(BRANDS.include?(@brand))
+      BRANDS << brand
+    end
   end
 
   def cobble
@@ -19,6 +18,9 @@ class Shoe
 
 end
 
-    contact_details_hash.each do |attribute, data|
-      if attribute == :favorite_ice_cream_flavors
-        data.delete_if {|ice_cream| ice_cream == "strawberry"}
+def initialize(brand)
+    @brand = brand
+    if !(BRANDS.include?(@brand))
+      BRANDS << @brand
+    end
+  end
